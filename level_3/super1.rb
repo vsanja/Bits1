@@ -1,3 +1,9 @@
+class User
+  def initialize(name)
+    @name = name
+  end
+end
+
 class Follower < User
   def initialize(name, following)
     @following = following

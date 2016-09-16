@@ -1,11 +1,9 @@
-def list_url(user_name, list_name)
-  if list_name
-   url = "https://twitter.com/#{user_name}/#{list_name}"
-  else
-   url = "https://twitter.com/#{user_name}"
-  end
-  url
-end
+options[:path] = if list_name
+                   "/#{user_name}/#{list_name}"
+                 else
+                   "/#{user_name}"
+                 end
 
-list_url("sanja", "vanja")
-url = "https://google.com"
+
+list_name = "list"
+user_name = "user"
